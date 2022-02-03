@@ -9,22 +9,62 @@
 <body>
     <header>
         <nav>
-            <p>Setup</p>
-            <ol>
-                <li>Google Chrome</li>
-                <li>Visual Studio Code</li>
-                <li>Figma</li>
-                <li>GitHub</li>
-            </ol>
-            <p>Conceptos esenciales del Desarrollo Web</p>
-            <ol>
-                <li>¿Qué es HTML?</li>
-                <li>Etiquetas</li>
-                <li>DOM</li>
-                <li>Semántica</li>
-                <li>Atributos</li>
-                <li>¿Qué es CSS?</li>
-            </ol>
+            <details open>
+                <summary>
+                    <strong>Setup</strong>
+                </summary>
+                <ol>
+                    <li>
+                        <a href="#google-chrome">Google Chrome</a>
+                    </li>
+                    <li>
+                        <a href="#vs-code">Visual Studio Code</a>
+                    </li>
+                    <li>
+                        <a href="#figma">Figma</a>
+                    </li>
+                    <li>
+                        <a href="#github">GitHub</a>
+                    </li>
+                </ol>
+            </details>
+            <details open>
+                <summary>
+                        <strong>
+                            <a href="#essential-concepts">Conceptos esenciales del Desarrollo Web</a>
+                        </strong>
+                </summary>
+                <ol>
+                    <li>
+                        <a href="#html-text">¿Qué es HTML?</a>
+                    </li>
+                    <li>
+                        <a href="#labels-text">Etiquetas</a>
+                    </li>
+                    <li>
+                        <a href="#dom-text">DOM</a>
+                    </li>
+                    <li>
+                        <a href="#semantic-text">Semántica</a>
+                    </li>
+                    <li>
+                        <a href="#attributes-text">Atributos</a>
+                    </li>
+                    <li>
+                        <a href="#css-text">¿Qué es CSS?</a>
+                    </li>
+                </ol>
+            </details>
+            <details>
+                <summary>
+                    <strong>Trucazos aprendidos</strong>
+                </summary>
+                <ol>
+                    <li>
+                        <a href="#trucazos">HTML</a>
+                    </li>
+                </ol>
+            </details>
         </nav>
     </header>
     <h1>Curso esencial de HTML y CSS</h1>
@@ -35,26 +75,26 @@
 
     <hr/>
     <h2>Setup</h2>
-    <img src="./assets/img/svg/google_chrome.svg" alt="Logo de Google Chrome" title="Google Chrome"/>
+    <img id="google-chrome" src="./assets/img/svg/google_chrome.svg" alt="Logo de Google Chrome" title="Google Chrome"/>
     <h3>Google Chrome</h3>
     <p>
         Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y 
         herramientas de desarrollo avanzadas y de amigable uso.
     </p>
-    <img src="./assets/img/svg/visual_studio_code.svg" alt="Logo de VS Code" title="Visual Studio Code">
+    <img id="vs-code" src="./assets/img/svg/visual_studio_code.svg" alt="Logo de VS Code" title="Visual Studio Code">
     <h3>Visual Studio Code</h3>
     <p>
         Visual Studio Code es el editor de texto más popular y potente del mercado actualmente, su fácil uso 
         y la capacidad de extenderlo por medio de plugins lo hace el complemento perfecto para cualquier programador sin 
         importar el lenguaje en el que se desenvuelva.
     </p>
-    <img src="./assets/img/svg/figma.svg" alt="Logo de Figma" title="Figma">
+    <img id="figma" src="./assets/img/svg/figma.svg" alt="Logo de Figma" title="Figma">
     <h3>Figma</h3>
     <p>
         Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para su 
         implementación por su fácil uso porque puede ser usado directamente desde el navegador.
     </p>
-    <img src="./assets/img/svg/github.svg" alt="Logo de GitHub" title="GitHub">
+    <img id="github" src="./assets/img/svg/github.svg" alt="Logo de GitHub" title="GitHub">
     <h3>GitHub</h3>
     <p>
         Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y programadores de todo el mundo, 
@@ -66,13 +106,30 @@
     </blockquote>
     <hr/>
 
-    <h2>Conceptos esenciales del Desarrollo Web</h2>
-    <h3>Qué es HTML</h3>
+    <h2 id="essential-concepts">Conceptos esenciales del Desarrollo Web</h2>
+    <h3 id="html-text">Qué es HTML</h3>
     <p>
         Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. 
         Define el significado y la estructura del contenido.
+        <code>
+            const name = "your name";
+        </code>
     </p>
-    <h3>Etiquetas</h3>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;en&quot;&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;Document&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+    <h3 id="labels-text">Etiquetas</h3>
     <p>
         Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website 
         y cada una tiene características y usos diferentes aunque visualmente den un resultado similar.
@@ -83,14 +140,14 @@
         podremos darnos una pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán 
         parte de tu día a día como Software Developer.
     </p>
-    <h3>DOM</h3>
+    <h3 id="dom-text">DOM</h3>
     <p>
         El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si 
         un árbol genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación 
         podemos identificar dependencias, herencias en css y que tan complejo es nuestro proyecto.
     </p>
     <img src="./assets/img/png/dom.png" alt="Imagen descriptiva del Document Object Model" title="Estructura del árbol que representa al Document Object Model">
-    <h3>Semántica</h3>
+    <h3 id="semantic-text">Semántica</h3>
     <p>
         La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente 
         decorativos y no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o 
@@ -99,20 +156,16 @@
         primeros resultados de búsqueda SEO. También ayudará a la accesibilidad de tu sitio web, para que personas 
         con habilidades diferentes puedan entender cada contenido.
     </p>
-    <h3>Atributos</h3>
+    <h3 id="attributes-text">Atributos</h3>
     <p>
         Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos funcionan en solo alguna etiquetas como src
     </p>
-    <h3>CSS</h3>
-    <p>
-        Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML
-    </p>
-    <h3>CSS</h3>
+    <h3 id="css-text">CSS</h3>
     <p>
         Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML
     </p>
     <img src="./assets/img/png/css3.png" alt="Logo CSS3" title="Ejemplo de código en CSS3">
-    <h2>Modelo de caja</h2>
+    <h2 id="box-model">Modelo de caja</h2>
     <h3>El modelo de caja está compuesto por:</h3>
     <p>
         Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y herramientas de desarrollo avanzadas y de amigable uso.
@@ -123,25 +176,61 @@
         <li>Border / Borders</li>
         <li>Margin / Márgenes</li>
     </ol>
-    <h3>Propiedades físicas para el modelo de caja:</h3>
+    <h3 id="box-model-physical-props">Propiedades físicas para el modelo de caja:</h3>
     <ul>
         <li>width / height</li>
         <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
         <li>border / border-top | border-right | border-bottom | border-left</li>
         <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
     </ul>
-    <h3>Propiedades lógicas para el modelo de caja:</h3>
+    <h3 id="box-model-logical-props">Propiedades lógicas para el modelo de caja:</h3>
     <ul>
         <li>inline-size / block-size</li>
         <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start | margin-inline-end</li>
         <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
         <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
     </ul>
-    <h3>Modelo de caja</h3>
+    <h3 id="box-model-picture">Modelo de caja</h3>
     <img src="./assets/img/png/leo_no_te_rindas.png" alt="Foto de Leonidas Esteban en Puente de San Francisco EEUU" title="Leonidas Esteban - No te rindas">
     <p>***</p>
+    <hr/>
+    <img id="trucazos" src="https://www.descargarstickers.com/publico/static/miniatura/2020/08/186228.gif" alt="Imagen Qué trucazo, Moe de Los Simpsons" title="Imagen Qué trucazo, Moe de Los Simpsons">
+    <h2>Trucazos aprendidos</h2>
+    <details>
+        <summary><strong>HTML</strong></summary>
+        <ol>
+            <li>
+                Puedo agregar el atributo <i>title</i> y <i>alt</i> a las imágenes para que puedan ser leídas por lectores de pantallas y ofrecer
+                mayor accesibilidad para usuarios con alguna discapacidad.
+            </li>
+            <li>
+                Al darle mejor semántica a mi web a través de las etiquetas, obtengo un mejor SEO <i>(Search Engine Optimization)</i>
+            </li>
+            <li>
+                Puedo inspeccionar todos estos temas en el navegador, en <i>Styles -> Accessibility</i>
+            </li>
+            <li>
+                Puedo generar rutas relativas y absolutas para mis enlaces. Por ejemplo:
+                <code>
+                    <pre>img src="./assets/img/png/leo_no_te_rindas.png"</pre>    
+                </code>
+                sería una <strong>ruta relativa</strong> al folder donde se encuentran las imágenes. 
+                <code>
+                    <pre>img src="/assets/img/png/leo_no_te_rindas.png"</pre>    
+                </code>
+                sería una <strong>ruta absoluta</strong> al folder raíz de mi proyecto. Con ello no se romperá el vínculo de la imagen sin importar 
+                la ubicación del archivo <i>html</i> 
+            </li>
+            <li>
+                <strong>Trucazo! de menús desplegables:</strong>
+                Podemos generar menús desplegables solo con <i>html</i>, con las etiquetas <i>details</i> y dentro de ella la etiqueta <i>summary</i>,
+                que sería como el nombre del menú desplegable; ya dentro de <i>details</i> el resto de información. 
+            </li>
+        </ol>
+    </details>
     <p>
-        Si tienes alguna pregunta escríbeme a javier@solido.co
+        Si tienes alguna pregunta escríbeme a 
+        <a href="mailto:javier@solido.co">javier@solido.co</a>
     </p>
     <h3>Suscríbete a nuestro newsletter</h3>
     <input type="text" placeholder="Nombre"/>
