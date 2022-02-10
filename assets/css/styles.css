@@ -1,33 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap');
+
 :root {
     font-size: 18px;
+    --black: #212121; 
+    --gray10: #616161;
+    --gray20: #424242;
 }
 
 body {
-    color: #212121;
+    color: var(--black);
+    font-family: 'Assistant', sans-serif;
 }
 
 a {
-    color: #212121;
+    color: var(--black);
     
 }
 
 header {
     font-size: 14px;
-    color: #616161;
+    color: var(--gray);
 }
 
 header a {
     font-size: 14px;
-    color: #616161;
+    color: var(--gray);
     text-decoration: none;
 }
 
 header a:hover{
-    color: #212121;
+    color: var(--black);
 }
 
 nav details summary {
-    color: #212121;
+    color: var(--black);
     font-weight: bold;
 }
 
@@ -41,4 +47,43 @@ h2 {
 
 h3 {
     font-size: 1.5em;
+}
+
+h3::before {
+    content: '#';
+}
+
+h3::after {
+    content: '';
+    width: 32px;
+    height: 4px;
+    background: var(--gray20);
+    display: block;
+
+}
+
+pre {
+    background-color: #FEC62E;
+}
+
+code {
+    background: ghostwhite;
+    font-size: .9rem;
+    color: var(--gray);
+    padding: .2rem;
+    border-radius: .5rem;
+}
+
+.hero {
+    /* background: red url('../img/png/patron-1.png'); */
+    background-image: linear-gradient(to top, rgba(255,255,255,.3), transparent), url('../img/png/patron-1.png');
+    /* Propiedades adicionales */
+    /* background-repeat: no-repeat;
+    background-position: left 50px bottom 50px;
+    background-size: cover; */
+    height: 350px;
+}
+
+::selection {
+    background-color: aqua;
 }
