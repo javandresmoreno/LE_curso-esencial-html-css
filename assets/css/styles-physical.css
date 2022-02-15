@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700&display=swap');
+
+:root {
+    font-size: 18px;
+    --black: #212121; 
+    --gray10: #616161;
+    --gray20: #424242;
+}
+
+::selection {
+    background-color: aqua;
+}
+
+body {
+    color: var(--black);
+    font-family: 'Assistant', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: var(--black);
+    
+}
+
+header {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+header a {
+    font-size: 14px;
+    color: var(--gray);
+    text-decoration: none;
+}
+
+header a:hover{
+    color: var(--black);
+}
+
+nav details summary {
+    color: var(--black);
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 64px;
+    margin-bottom: 16px
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: normal;
+    margin: 64px 0 40px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    font-weight: normal;
+}
+
+hr {
+    border-color: var(--gray10);
+    opacity: 20%;
+    margin: 64px 0;
+}
+
+pre {
+    background-color: #FEC62E;
+    padding: 40px;
+    font-family: 'Assistant', sans-serif;
+    line-height: 24px;
+}
+
+code {
+    background: ghostwhite;
+    font-size: .9rem;
+    color: var(--gray);
+    padding: .2rem;
+    border-radius: .5rem;
+}
+
+blockquote {
+    font-size: 24px;
+    margin: 32px 0;
+    padding-left: 16px;
+}
+
+blockquote span {
+    color: var(--gray10);
+}
+
+blockquote span::before {
+    content: "- "
+}
+
+.section-content{
+    counter-reset: titleList;
+}
+
+.section-content h3 {
+    counter-increment: titleList;
+}
+
+.section-content h3::before {
+    content: counter(titleList, decimal)". ";
+}
+
+.section-content h3::after {
+    content: '';
+    width: 32px;
+    height: 4px;
+    background: var(--gray20);
+    display: block;
+}
+
+.section-content img {
+    margin-top: 40px;
+}
+
+.section-content + hr {
+    display: none;
+}
+
+.section-content ol li {
+    line-height: 24px;
+}
+
+.section-content ul li {
+    margin-bottom: 16px;
+}
+
+.hero {
+    /* background: red url('../img/png/patron-1.png'); */
+    background-image: linear-gradient(to top, rgba(255,255,255,.3), transparent), url('../img/png/patron-1.png');
+    /* Propiedades adicionales */
+    /* background-repeat: no-repeat;
+    background-position: left 50px bottom 50px;
+    background-size: cover; */
+    height: 350px;
+}
+
