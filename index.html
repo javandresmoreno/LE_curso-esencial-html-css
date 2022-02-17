@@ -9,67 +9,76 @@
 </head>
 <body>
     <div class="hero"></div>
-    <header>
-        <nav>
-            <details open>
-                <summary>
-                    <strong>Setup</strong>
-                </summary>
-                <ol>
-                    <li>
-                        <a href="#google-chrome">Google Chrome</a>
-                    </li>
-                    <li>
-                        <a href="#vs-code">Visual Studio Code</a>
-                    </li>
-                    <li>
-                        <a href="#figma">Figma</a>
-                    </li>
-                    <li>
-                        <a href="#github">GitHub</a>
-                    </li>
-                </ol>
-            </details>
-            <details open>
-                <summary>
-                        <strong>
-                            Conceptos esenciales del Desarrollo Web
-                        </strong>
-                </summary>
-                <ol>
-                    <li>
-                        <a href="#html-text">¿Qué es HTML?</a>
-                    </li>
-                    <li>
-                        <a href="#labels-text">Etiquetas</a>
-                    </li>
-                    <li>
-                        <a href="#dom-text">DOM</a>
-                    </li>
-                    <li>
-                        <a href="#semantic-text">Semántica</a>
-                    </li>
-                    <li>
-                        <a href="#attributes-text">Atributos</a>
-                    </li>
-                    <li>
-                        <a href="#css-text">¿Qué es CSS?</a>
-                    </li>
-                </ol>
-            </details>
-            <details>
-                <summary>
-                    <strong>Trucazos aprendidos</strong>
-                </summary>
-                <ol>
-                    <li>
-                        <a href="#trucazos">HTML</a>
-                    </li>
-                </ol>
-            </details>
-        </nav>
-    </header>
-    <main class="main debug">
+    <div class="header">
+        <div class="wrapper">
+            <div class="header-content">
+                <header>
+                    <nav>
+                        <details open>
+                            <summary>
+                                <strong>Setup</strong>
+                            </summary>
+                            <ol>
+                                <li>
+                                    <a href="#google-chrome">Google Chrome</a>
+                                </li>
+                                <li>
+                                    <a href="#vs-code">Visual Studio Code</a>
+                                </li>
+                                <li>
+                                    <a href="#figma">Figma</a>
+                                </li>
+                                <li>
+                                    <a href="#github">GitHub</a>
+                                </li>
+                            </ol>
+                        </details>
+                        <details open>
+                            <summary>
+                                    <strong>
+                                        Conceptos esenciales del Desarrollo Web
+                                    </strong>
+                            </summary>
+                            <ol>
+                                <li>
+                                    <a href="#html-text">¿Qué es HTML?</a>
+                                </li>
+                                <li>
+                                    <a href="#labels-text">Etiquetas</a>
+                                </li>
+                                <li>
+                                    <a href="#dom-text">DOM</a>
+                                </li>
+                                <li>
+                                    <a href="#semantic-text">Semántica</a>
+                                </li>
+                                <li>
+                                    <a href="#attributes-text">Atributos</a>
+                                </li>
+                                <li>
+                                    <a href="#css-text">¿Qué es CSS?</a>
+                                </li>
+                            </ol>
+                        </details>
+                        <details open>
+                            <summary>
+                                <strong>Trucazos aprendidos</strong>
+                            </summary>
+                            <ol>
+                                <li>
+                                    <a href="#trucazos">HTML</a>
+                                </li>
+                                <li>
+                                    <a href="#trucazos">CSS</a>
+                                </li>
+                            </ol>
+                        </details>
+                    </nav>
+                </header>
+            </div>
+        </div>
+    </div>
+    <main class="main">
         <div class="wrapper">
             <div class="main-content">
                 <h1>Curso esencial de HTML y CSS</h1>
@@ -281,6 +290,24 @@
                                         */
                                     
                                 </code>
+                            </li>
+                            <li>
+                                Se puede realizar modales con las siguientes propiedades:
+                                <pre>
+                                    .modal {
+                                        position: absolute; 
+                                        top: 0;
+                                        bottom: 0;
+                                        right: 0;
+                                        left: 0;
+                                        margin: 50px;
+                                    }
+                                </pre>
+                            </li>
+                            <li>
+                                La posición de <code>Sticky</code> para quedarse fijo necesita
+                                que su propiedad <code>top</code> tenga un valor distinto a 
+                                <code>auto.</code>
                             </li>
                         </ol>
                     </details>
