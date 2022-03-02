@@ -168,9 +168,63 @@ blockquote {
     max-inline-size: 100%;
 }
 
+.section-content details {
+    margin-block-start: 1rem;
+    cursor: pointer;
+}
+
 .wrapper{
     /*La propiedad Inline size es 
     igual al width en valores lógicos*/ 
     max-inline-size: 902px;
     margin: auto;
+}
+
+.slider-container {
+    display: block;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    border-radius: .5rem;
+    border: .3rem solid #5551ff;
+    box-shadow: -5px 5px 0 0 #abaaf6;
+    font-size: 0;
+}
+  
+.slider-video {
+    inline-size: 100%;
+    display: inline-block;
+    margin: 0;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.slider-bullet {
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.slider-bullet:hover {
+    background-color: var(--white10);
+}
+
+.slider-bullet-list {
+    text-align: center;
+    margin-block-start: 1rem;
+}
+
+.slider-bullet-list a {
+    margin-inline: .5rem;
+}
+
+
+
+#trucazos {
+    border-radius: 2rem;
+    border: .3rem solid #5551ff;
+    box-shadow: -5px 5px 0 0 #abaaf6;
+    margin-inline: auto;
 }

@@ -65,6 +65,24 @@
                         </details>
                         <details open>
                             <summary>
+                                    <strong>
+                                        Modelo de Caja
+                                    </strong>
+                            </summary>
+                            <ol>
+                                <li>
+                                    <a href="#box-model-physical-props">Propiedades físicas para el modelo de caja</a>
+                                </li>
+                                <li>
+                                    <a href="#box-model-logical-props">Propiedades lógicas para el modelo de caja</a>
+                                </li>
+                                <li>
+                                    <a href="#box-model-video">Slider de Videos</a>
+                                </li>
+                            </ol>
+                        </details>
+                        <details open>
+                            <summary>
                                 <strong>Trucazos aprendidos</strong>
                             </summary>
                             <ol>
@@ -89,7 +107,6 @@
                     Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de contenidos, 
                     en el nivel 2 aprenderás de componentes y en 3 sobre layouts.
                 </p>
-                <div class="hero"></div>
                 <hr/>
                 <section class="section-content">
         
@@ -216,9 +233,25 @@
                         <li>border-block | border-inline | border-block-start | border-block-end | border-inline-start | border-inline-end</li>
                         <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start | padding-inline-end</li>
                     </ul>
-                    <h3 id="box-model-picture">Modelo de caja</h3>
-                    <img src="./assets/img/png/leo_no_te_rindas.png" alt="Foto de Leonidas Esteban en Puente de San Francisco EEUU" title="Leonidas Esteban - No te rindas">
-                    <p>***</p>
+                    <h3 id="box-model-video">Slider de Videos</h3>
+                    <div class="slider">
+                        <scroll-container class="slider-container">
+                            <scroll-page class="slider-slide" id="video-1">
+                                <iframe class="slider-video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </scroll-page>
+                            <scroll-page class="slider-slide" id="video-2">
+                                <iframe class="slider-video" width="560" height="315" src="https://www.youtube.com/embed/mA9YsRcm2tE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </scroll-page>
+                            <scroll-page class="slider-slide" id="video-3">
+                                <iframe class="slider-video" width="560" height="315" src="https://www.youtube.com/embed/L69LJ1lOHec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </scroll-page>
+                        </scroll-container>
+                        <div class="slider-bullet-list">
+                            <a class="slider-bullet" href="#video-1"></a>
+                            <a class="slider-bullet" href="#video-2"></a>
+                            <a class="slider-bullet" href="#video-3"></a>
+                        </div>
+                    </div>
                 </section>
                 <hr/>
                 <section class="section-content">
@@ -336,13 +369,15 @@
                     Si tienes alguna pregunta escríbeme a 
                     <a href="mailto:javier@solido.co">javier@solido.co</a>
                 </p>
+                <div class="section-content">
+                    <h4>Suscríbete a nuestro newsletter</h4>
+                    <input type="text" placeholder="Nombre"/>
+                    <input type="email" placeholder="Correo electrónico"/>
+                    <button>Suscribirme</button>
+                </div>
             </div>
         </div>
     </main>
-    <h3>Suscríbete a nuestro newsletter</h3>
-    <input type="text" placeholder="Nombre"/>
-    <input type="email" placeholder="Correo electrónico"/>
-    <button>Suscribirme</button>
     <footer>
         <h4>© Javier Moreno | 2022</h4>
     </footer>
